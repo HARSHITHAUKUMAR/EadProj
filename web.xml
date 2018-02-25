@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+
+	<servlet>
+		<servlet-name>abc</servlet-name>
+		<servlet-class>com.rvce.AdminLogin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/hod</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>xyz</servlet-name>
+		<servlet-class>com.rvce.AdminDisplay</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>xyz</servlet-name>
+		<url-pattern>/hview</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>xy</servlet-name>
+		<servlet-class>com.rvce.faculty.FacultyLogin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>xy</servlet-name>
+		<url-pattern>/faculty</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>z</servlet-name>
+		<servlet-class>com.rvce.faculty.FacultyDetails</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>z</servlet-name>
+		<url-pattern>/faclog</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>N</servlet-name>
+		<servlet-class>com.rvce.faculty.Edit</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>N</servlet-name>
+		<url-pattern>/faculty/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>A</servlet-name>
+		<servlet-class>com.rvce.edit.Addfac</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>A</servlet-name>
+		<url-pattern>/act</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>x</servlet-name>
+		<servlet-class>com.rvce.faculty.ControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>x</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+</web-app>
+
